@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link type="text/css" href="css/bootstrap.css" rel="stylesheet"></link>
+    <style type="text/css">
+        #d1{
+            width:600px;
+            height:600px;
+            background-color: gray;
+        }
+        @media(min-width: 500px)
+        {
+            #d1
+            {
+                height: 400px;
+                width: 400px;
+                background-color: coral;
+            }
+        }
+        @media(min-width: 768px)
+        {
+            #d1
+            {
+                height: 300px%;
+                width: 300px;
+                background-color: indianred;
+            }
+        }
+        @media(min-width:992px)
+        {
+            #d1
+            {
+                height: 200px;
+                width: 200px;
+                background-color: lightseagreen;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="d1">
+        How you doin'?
+    </div>
+</body>
+</html>
