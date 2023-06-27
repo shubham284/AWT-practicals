@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>JS demo</title>
+<script src="demo.js"></script>
+<script type="text/javascript">
+    function demoInternalAlert()
+    {
+        alert("Relex boys..");
+    }
+    function demoInternalConfirm()
+    {
+        if(confirm("Are you Sure!!"))
+        {
+            alert("yes");
+        }
+        else
+        {
+            alert("no");
+        }
+    }
+    function demoInternalPrompt()
+    {
+        var fname = prompt("Enter Frist Name:");
+        var lname = prompt("Enter Last Name:");
+        alert(fname + " " +lname);
+    }
+
+</script>
+<style type="text/css">
+     body{
+        background-color: burlywood;
+    }
+    div{
+        background-color: chocolate;
+        height: 200px;
+        width: 200px;
+    }
+</style>
+</head>
+<body>
+    <div id="d1">Relex Boys</div>
+    <input type="button" value="alert Inline" onclick="alert('Relex boys.....')">
+    <input type="button" value="confirm Inline" onclick="confirm('chill......')">
+    <input type="button" value="prompt Inline" onclick="prompt('nice work...')">
+    <hr>
+    <input type="button" value="alert Internal" onclick="demoInternalAlert()">
+    <input type="button" value="confirm Internal" onclick="demoInternalConfirm()">
+    <input type="button" value="prompt Internal" onclick="demoInternalPrompt()">
+    <hr>
+    <input type="button" value="alert External" onclick="demoExternalAlert()">
+    <input type="button" value="confirm External" onclick="demoExternalConfirm()">
+    <input type="button" value="prompt External" onclick="demoExternalPrompt()">
+</body>
+</html>
