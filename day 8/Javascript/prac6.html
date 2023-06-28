@@ -25,6 +25,31 @@
         var lname = prompt("Enter Last Name:");
         alert(fname + " " +lname);
     }
+    function bodyBGGreen()
+    {
+        document.body.style.backgroundColor="Green";
+    }
+    function divBGGray()
+    {
+        document.getElementById("d1").style.backgroundColor="Gray";
+    }
+    function bodyBGDynamic()
+    {
+        document.getElementById("d1").style.backgroundColor=prompt("Enter the color...");
+    }
+    function divBGDynamic()
+    {
+        document.body.style.backgroundColor=prompt("Enter the color name here...");
+    }
+    function bodyBGCP1()
+    {
+        document.body.style.backgroundColor=document.getElementById("Cp1").value;
+    }
+    function divBGCP2()
+    {
+        document.getElementById("d1").style.backgroundColor=document.getElementById("Cp2").value;
+    }
+
 
 </script>
 <style type="text/css">
@@ -39,7 +64,7 @@
 </style>
 </head>
 <body>
-    <div id="d1">Relex Boys</div>
+    <div id="d1">Relax Boys</div>
     <input type="button" value="alert Inline" onclick="alert('Relex boys.....')">
     <input type="button" value="confirm Inline" onclick="confirm('chill......')">
     <input type="button" value="prompt Inline" onclick="prompt('nice work...')">
@@ -51,5 +76,16 @@
     <input type="button" value="alert External" onclick="demoExternalAlert()">
     <input type="button" value="confirm External" onclick="demoExternalConfirm()">
     <input type="button" value="prompt External" onclick="demoExternalPrompt()">
+    <hr>
+    <input type="button" value="body color" onclick="bodyBGGreen()">
+    <input type="button" value="div color" onclick="divBGGray()">
+    <hr>
+    <input type="button" value="body bg" onclick="bodyBGDynamic()">
+    <input type="button" value="div bg" onclick="divBGDynamic()">
+    <hr>
+    <input type="color" id="Cp1" onclick="bodyBGCP1()">
+    <input type="color" id="Cp2" onclick="divBGCP2()">
+    <hr>
+
 </body>
 </html>
