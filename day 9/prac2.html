@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While loop</title>
+</head>
+<body>
+    <h2>Javascript while loop</h2>
+    <p id="demo"></p>
+    <script type="text/Javascript">
+        let text= "";
+        let i= 0;
+        while(i<10)
+        {
+            text += "<br the number is: >"+ i;
+            i++;
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+    <p id="demo1"></p>
+    <script type="text/Javascript">
+        const cars=["SUPRA","BMW","LEMBO","FORD"];
+        let txt = "";
+        let j = 0;
+        while(cars[j])
+        {
+            txt += cars[j] + "<br>";
+            j++;
+        }
+        document.getElementById("demo1").innerHTML = txt;
+    </script>
+</body>
+</html>
