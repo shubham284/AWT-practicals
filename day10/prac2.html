@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery demo3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function()
+         {
+            $("#div1").click(function()
+            {
+                $("#div2").slideDown("slow");
+            });
+            $("#div3").click(function()
+            {
+                $("#div4").slideUp("slow");
+            });
+            $("#div5").click(function()
+            {
+                $("#div6").slideToggle("slow");
+            });
+         });
+    </script>
+    <Style>
+        #div1, #div2, #div3, #div4, #div5, #div6
+        {
+            padding: 5px;
+            text-align: center;
+            background-color: aquamarine;
+            border: solid 1px darkblue;
+        }
+       #div2, #div6
+       {
+        padding: 50px;
+        display: none;
+       }
+       #div4
+       {
+        padding: 50px;
+       }
+    </Style>
+</head>
+<body>
+    <div id="div1">Click To Slide Down Panel</div>
+    <div id="div2">Hello.......!</div>
+    <div id="div3">Click To Slide Up Panel</div>
+    <div id="div4">Hiiii.......!</div>
+    <div id="div5">Click To Slide Up and Down Panel</div>
+    <div id="div6">Heyyy.......!</div>
+
+</body>
+</html>
